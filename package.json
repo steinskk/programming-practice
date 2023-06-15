@@ -1,0 +1,12 @@
+{
+  "name": "beginner-programming-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test-runner.js",
+  "type": "module",
+  "scripts": {
+    "check": "node ./test-runner.js"
+  },
+  "author": "JesseLeung97",
+  "license": "ISC"
+}
