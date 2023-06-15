@@ -8,7 +8,7 @@ import * as constants from "./test-runner/constants.js"
 function main() {
     let fileName = process.argv.slice(2)
     if (fileName == undefined || fileName.length == 0) {
-        logError("Please specify a test name using the format: npm run start -- <test name>")
+        logError("Please specify a test name using the format: npm run check -- <test name>")
         return
     }
     fileName = fileName[0]
