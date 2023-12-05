@@ -4,7 +4,7 @@ This is a collection of several exercises designed to get you familiar with the 
 
 ### How to use the exercises
 
-Empty submission files have been provided in the `exercises` directory.  Exercise explanations and examples are given in the empty submission files.  Your code should be entered into the empty function body of the specific exercise file.  You will not need to import any external libraries but if you would like to write your own helper functions, please do so in the same exercise file.  It is important to not alter any of the boilerplate code (code surrounding the empty function body) as this is used to run the tests.  When you are ready to test your code, you can do so by opening a terminal window in the project directory and running `npm run test -- <name of the exercise>`.  For example, when you are ready to test the `zip-two-arrays` exercise, you will run `npm run check -- zip-two-arrays`.
+Empty submission files have been provided in the `exercises` directory.  Exercise explanations and examples are given in the empty submission files.  Your code should be entered into the empty function body of the specific exercise file.  You will not need to import any external libraries but if you would like to write your own helper functions, please do so in the same exercise file.  It is important to not alter any of the boilerplate code (code surrounding the empty function body) as this is used to run the tests.  When you are ready to test your code, you can do so by opening a terminal window in the project directory and running `npm run check -- <name of the exercise>`.  For example, when you are ready to test the `zip-two-arrays` exercise, you will run `npm run check -- zip-two-arrays`.
 
 ### Anatomy of an exercise file
 An exercise file includes the following sections:
@@ -76,12 +76,12 @@ function yourSolution(...) {
 
 function runTest() {
     try {
-		const res = functionName(...)
-		const checkRes = yourSolution(...)
+        const res = functionName(...)
+        const checkRes = yourSolution(...)
         
         if (res != checkRes) {
         	logError(`The solution was incorrect`)
-        return constants.INCORRECT_OUTPUT
+            return constants.INCORRECT_OUTPUT
         }
     } catch {
         return constants.ERROR
