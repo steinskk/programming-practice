@@ -12,19 +12,30 @@ Output: False
 Explanation: The value 2 does not appear in the input array.
 
 */
-// コミットテスト
+
 /**
  * @param Int[] haystack
  * @param Int needle
  * @returns Boolean
  */
 function checkInArray(haystack, needle) {
-  /*
     
-    */
+    const 
+    
+    
+
+
+
+
+
+    
 }
+
+
 
 /*
 Do not alter this code
 */
-export { checkInArray };
+export {
+    checkInArray
+}
