@@ -7,7 +7,7 @@ Output: True
 Explanation: 3 is found at index 1 in the input array.
 
 Example:
-Input: [1,1,1,1,1], 2
+Input: haystack; [1,1,1,1,1], needle: 2
 Output: False
 Explanation: The value 2 does not appear in the input array.
 
@@ -19,23 +19,16 @@ Explanation: The value 2 does not appear in the input array.
  * @returns Boolean
  */
 function checkInArray(haystack, needle) {
-    
-    const 
-    
-    
-
-
-
-
-
-    
+  for (let i = 0; i < haystack.length; i++) {
+    console.log(haystack[i]);
+    if (haystack[i] == needle) {
+      return true;
+    }
+  }
+  return false;
 }
-
-
 
 /*
 Do not alter this code
 */
-export {
-    checkInArray
-}
+export { checkInArray };
