@@ -27,12 +27,12 @@ Explanation: 1 is not divisible by either 3 or 5
  * @returns String
  */
 function easyFizzBuzz(n) {
-  if (n % 3 === 0) {
-    return "Fizz";
+  if (n % 3 === 0 && n % 5 === 0) {
+    return "fizzbuzz";
+  } else if (n % 3 === 0) {
+    return "fizz";
   } else if (n % 5 === 0) {
-    return "Buzz";
-  } else if (n % 3 === 0 && n % 5 === 0) {
-    return "FizzBuzz";
+    return "buzz";
   } else {
     return "";
   }
