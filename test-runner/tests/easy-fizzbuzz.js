@@ -3,13 +3,11 @@ import { logError } from "../logger.js";
 import * as constants from "../constants.js";
 
 function fizzBuzz(n) {
-    if (n == 0) return ""
-
     let output = ""
-    if (n % 3 == 0) {
+    if (n % 3 === 0) {
         output += "fizz"
     }
-    if (n % 5 == 0) {
+    if (n % 5 === 0) {
         output += "buzz"
     }
     return output

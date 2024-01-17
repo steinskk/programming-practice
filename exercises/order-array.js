@@ -23,22 +23,18 @@ https://en.wikipedia.org/wiki/Quicksort
  * @returns Int[]
  */
 function orderArray(inputArray) {
-    /*
-    Your code here
-    */
+  if (inputArray.length <= 1) {
+    return inputArray;
+  }
+  const pivot = inputArray[0];
+  const left = [];
+  const right = [];
 
-
-
-
-
-
+  for (let i = 1; i < inputArray.length; i++) {
+ 
 }
-
-
 
 /*
 Do not alter this code
 */
-export {
-    orderArray
-}
+export { orderArray };
