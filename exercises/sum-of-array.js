@@ -13,22 +13,14 @@ Explanation: The sum of elements is 1 + 5 + 4 + 3 which is 13.
  * @returns Int
  */
 function sumOfArray(inputArray) {
-    /*
-    Your code here
-    */
-    
-
-
-
-
-
+  let sum = 0;
+  for (let i = 0; i < inputArray.length; i++) {
+    sum += inputArray[i];
+  }
+  return sum;
 }
-
-
 
 /*
 Do not alter this code
 */
-export {
-    sumOfArray
-}
+export { sumOfArray };
