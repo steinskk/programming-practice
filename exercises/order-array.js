@@ -23,15 +23,25 @@ https://en.wikipedia.org/wiki/Quicksort
  * @returns Int[]
  */
 function orderArray(inputArray) {
-  if (inputArray.length <= 1) {
-    return inputArray;
+  function quickSort(inputArray) {
+    if (inputArray.length <= 1) {
+      return inputArray;
+    }
+    const pivot = inputArray[Math.floor(inputArray.length / 2)];
+    const left = [];
+    const right = [];
+    for (let i = 0; i < inputArray.length; i++) {
+      if (i === Math.floor(inputArray.length / 2)) {
+        continue;
+      }
+      if (inputArray[i] <= pivot) {
+        left.push(inputArray[i]);
+      } else {
+        right.push(inputArray[i]);
+      }
+    }
+    return [quickSort(left).concat(pivot, quickSort(right))];
   }
-  const pivot = inputArray[0];
-  const left = [];
-  const right = [];
-
-  for (let i = 1; i < inputArray.length; i++) {
- 
 }
 
 /*
