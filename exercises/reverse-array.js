@@ -14,23 +14,11 @@ Bonus: Can you reverse the elements without using a second array?
  * @returns Int[]
  */
 function reverseArray(inputArray) {
-    /*
-    Your code here
-    */
-
-
-
-
-
-
-
+  inputArray.reverse();
+  return inputArray;
 }
-
-
 
 /*
 Do not alter this code
 */
-export {
-    reverseArray
-}
+export { reverseArray };
