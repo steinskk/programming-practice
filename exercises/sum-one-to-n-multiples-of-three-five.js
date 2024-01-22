@@ -11,26 +11,20 @@ Explanation: The sum of the numbers 1 to 5 only considering multiples of 3 and 5
 */
 
 /**
- * @param Int n 
+ * @param Int n
  * @returns Int
  */
 function sumOneToN(n) {
-    /*
-    Your code here
-    */
-
-
-
-
-
-
+  let result = 0;
+  for (let i = 1; i < n + 1; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      result += i;
+    }
+  }
+  return result;
 }
-
-
 
 /*
 Do not alter this code
 */
-export {
-    sumOneToN
-}
+export { sumOneToN };

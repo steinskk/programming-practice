@@ -10,26 +10,18 @@ Explanation: The sum of the numbers 1 to 5 is 1 + 2 + 3 + 4 + 5 which is 15.
 */
 
 /**
- * @param Int n 
+ * @param Int n
  * @returns Int
  */
 function sumOneToN(n) {
-    /*
-    Your code here
-    */
-    
-
-
-
-
-
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum += i;
+  }
+  return sum;
 }
-
-
 
 /*
 Do not alter this code
 */
-export {
-    sumOneToN
-}
+export { sumOneToN };
