@@ -18,22 +18,21 @@ Explanation: Elements are taking in alternating order from each array starting w
  * @returns String[]
  */
 function zipArrays(a, b) {
-    /*
-    Your code here
-    */
-
-
-
-
-
-    
+  const result = [];
+  let i = 0;
+  while (i < a.length || i < b.length) {
+    if (i < a.length) {
+      result.push(a[i]);
+    }
+    if (i < b.length) {
+      result.push(b[i]);
+    }
+    i++;
+  }
+  return result;
 }
-
-
 
 /*
 Do not alter this code
 */
-export {
-    zipArrays
-}
+export { zipArrays };
