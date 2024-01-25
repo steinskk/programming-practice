@@ -19,20 +19,16 @@ Explanation: when spelled backwards, car reads "rac" which means it's not a vali
  * @returns Boolean
  */
 function checkValidPalindrome(input) {
-    /*
-    Your code here
-    */
-
-
-
-    return false
+  const str = input.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+  for (let i = 0; i < str.length / 2; i++) {
+    if (str[i] !== str[str.length - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
 }
-
-
 
 /*
 Do not alter this code
 */
-export {
-    checkValidPalindrome
-}
+export { checkValidPalindrome };
